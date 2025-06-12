@@ -63,39 +63,42 @@
 
                     <!-- Item 2 -->
                     <div class="carousel-item">
-                        <div class="text-center">
-                            <h4>Asesoría Personalizada</h4>
-                            <div class="ratio ratio-16x9 my-3 mx-auto w-50">
-                                <img src="/images/soporte_imagen.jpeg"
+                        <div class="text-center w-50 mx-auto"> <!-- Contenedor padre con ancho fijo -->
+                            <h4>Estadisticas para tus ventas</h4>
+                            <div class="ratio ratio-16x9 my-3">
+                                <img src="/images/estadistica_imagen.png"
                                     class="img-fluid rounded placeholder-img"
                                     alt="Placeholder 16:9">
                             </div>
-                            <p>El equipo de InVentas ofrece asesoría exclusiva para cada cliente, adaptando soluciones a medida que impulsan el crecimiento de tu negocio.</p>
+                            <p> <!-- El párrafo hereda el ancho del padre -->
+                                EStadisticas en tiempo real que permiten a los usuarios tomar decisiones informadas basadas en datos precisos y actualizados.
+                            </p>
                         </div>
                     </div>
 
                     <!-- Item 3 -->
                     <div class="carousel-item">
-                        <div class="text-center">
-                            <h4>Asesoría Personalizada</h4>
-                            <div class="ratio ratio-16x9 my-3 mx-auto w-50">
-                                <img src="/images/estadistica_imagen.png"
+                        <div class="text-center w-50 mx-auto"> <!-- Contenedor padre con ancho fijo -->
+                            <h4>Plataforma Inteligente</h4>
+                            <div class="ratio ratio-16x9 my-3">
+                                <img src="/images/soporte_imagen.jpeg"
                                     class="img-fluid rounded placeholder-img"
                                     alt="Placeholder 16:9">
                             </div>
-                            <p>El equipo de InVentas ofrece asesoría exclusiva para cada cliente, adaptando soluciones a medida que impulsan el crecimiento de tu negocio.</p>
+                            <p> <!-- El párrafo hereda el ancho del padre -->
+                                El equipo de InVentas ofrece asesoría exclusiva para cada cliente, adaptando soluciones a medida que impulsan el crecimiento de tu negocio.
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Controles del carrusel -->
-                <button class="carousel-control-prev bg-dark rounded" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
