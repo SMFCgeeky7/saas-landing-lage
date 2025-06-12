@@ -74,6 +74,34 @@ nav ul li a:hover {
     background-color: #e6b800;
 }
 
+/*Botones del carrusel*/
+/* Ajustes para los controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 25%; /* Reduce el ancho del área del botón */
+    opacity: 0.8; /* Hace los botones más visibles */
+}
+
+/* Ajusta la posición de los íconos */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente para mejor visibilidad */
+    border-radius: 50%; /* Hace el fondo circular */
+    padding: 25px; /* Añade algo de padding alrededor del ícono */
+}
+
+/* Ajusta el contenedor del carrusel para que los controles estén más cerca */
+#featuresCarousel {
+    position: relative;
+    padding: 0 0px; /* Reduce el espacio en los laterales */
+}
+
+/* Asegura que las imágenes no se superpongan con los controles */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
 .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;

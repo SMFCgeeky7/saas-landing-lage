@@ -35,21 +35,16 @@
         <div class="container">
             <h2 class="title text-dark text-4xl font-semibold mb-4">Transforma tu negocio</h2>
             <p class="text-dark text-lg mb-6">¡Soluciones mayoristas y minoristas especializadas en ventas!</p>
-            <a href="#servicios" class="btn text-dark">Descubre Nuestros Servicios</a>
+            <a href="#servicios" class="btn text-dark">Registrate Ya</a>
         </div>
     </section>
 
     <section id="caracteristicas" class="py-5">
         <div class="container text-center">
-            <h3 class="text-3xl font-bold mb-8">Características de nuestro servicio</h3>
+            <h3 class="text-3xl font-bold mb-8">Beneficios de nuestro servicio</h3>
 
             <!-- Carrusel -->
             <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                     <!-- Item 1 -->
                     <div class="carousel-item active">
@@ -97,28 +92,36 @@
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev start-0 ms-2" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Anterior</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next end-0 me-2" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
         </div>
     </section>
 
-
-    <!-- Beneficios -->
+    <!-- Carcteristicas -->
     <section id="beneficios" class="bg-light py-5">
         <div class="container text-center">
-            <h3 class="text-3xl font-bold mb-8">Beneficios</h3>
-            <ul class="list-unstyled">
-                <li>Acceso a un amplio catálogo de productos de bisutería</li>
-                <li>Precios competitivos y descuentos exclusivos</li>
-                <li>Soporte personalizado 24/7</li>
-            </ul>
+            <h3 class="text-3xl font-bold mb-8">Carcteristicas</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Seguridad</h4>
+                    <p>Con soporte las 24 horas, te tenemos resguardado.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Eficiencia</h4>
+                    <p>Trabajamos bajo medidas de control de calidad para que tengas las mejor experiencia.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Facilidad de uso</h4>
+                    <p>Te garantizamos la facilidad de uso que necesitas para tu negocio.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -143,26 +146,49 @@
         </div>
     </section>
 
-    <!-- Planes -->
-    <section id="planes" class="bg-light py-5">
-        <div class="container text-center">
-            <h3 class="text-3xl font-bold mb-8">Planes Disponibles</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Plan Básico</h4>
-                    <p>Ideal para pequeñas tiendas minoristas. Incluye acceso al catálogo básico y un número limitado de productos.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Plan Avanzado</h4>
-                    <p>Para empresas de tamaño medio. Incluye todos los productos, soporte prioritario y acceso a herramientas avanzadas de gestión.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Plan Premium</h4>
-                    <p>Para grandes distribuidores. Incluye todas las ventajas del Plan Avanzado y personalización exclusiva, junto con análisis avanzados de ventas.</p>
-                </div>
-            </div>
+<!-- Planes -->
+<section id="planes" class="bg-light py-5">
+    <div class="container">
+        <h3 class="text-center text-3xl font-bold mb-5">Planes Disponibles</h3>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead style="background-color: #f7b5d7;">
+                    <tr>
+                        <th class="text-center py-3">Plan Básico</th>
+                        <th class="text-center py-3">Plan Avanzado</th>
+                        <th class="text-center py-3">Plan Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-4">
+                            <p class="mb-0">Ideal para pequeñas tiendas minoristas. Incluye acceso al catálogo básico y un número limitado de productos.</p>
+                        </td>
+                        <td class="p-4">
+                            <p class="mb-0">Para empresas de tamaño medio. Incluye todos los productos, soporte prioritario y acceso a herramientas avanzadas de gestión.</p>
+                        </td>
+                        <td class="p-4">
+                            <p class="mb-0">Para grandes distribuidores. Incluye todas las ventajas del Plan Avanzado y personalización exclusiva, junto con análisis avanzados de ventas.</p>
+                        </td>
+                    </tr>
+                    <!-- Fila adicional para precios o botones (opcional) -->
+                    <tr>
+                        <td class="text-center py-3">
+                            <button class="btn text-dark">Seleccionar</button>
+                        </td>
+                        <td class="text-center py-3">
+                            <button class="btn text-dark">Seleccionar</button>
+                        </td>
+                        <td class="text-center py-3">
+                        <a href="#servicios" class="btn text-dark">Registrate Ya</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Formas de Pago -->
     <section id="formas_pago" class="bg-light py-5">
