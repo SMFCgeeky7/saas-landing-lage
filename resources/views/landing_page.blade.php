@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InVentas - Plataforma para Mayoristas</title>
-    
+
     <!-- Cargar Bootstrap desde CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/landing_page.css') }}" rel="stylesheet"> <!-- Cargar tu propio CSS -->
 </head>
+
 <body class="bg-light">
 
     <!-- Encabezado (Header) -->
     <header class="text-white py-4">
         <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="title text-3xl font-bold" >InVentas</h1>
+            <h1 class="title text-3xl font-bold">InVentas</h1>
             <nav>
-                <ul class="list-unstyled d-flex mb-0">  
+                <ul class="list-unstyled d-flex mb-0">
                     <li><a href="#caracteristicas" class="text-white mx-3">Características</a></li>
                     <li><a href="#beneficios" class="text-white mx-3">Beneficios</a></li>
                     <li><a href="#testimonios" class="text-white mx-3">Testimonios</a></li>
@@ -38,64 +40,66 @@
     </section>
 
     <section id="caracteristicas" class="py-5">
-    <div class="container text-center">
-        <h3 class="text-3xl font-bold mb-8">Características de nuestro servicio</h3>
-        
-        <!-- Carrusel -->
-        <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Item 1 -->
-                <div class="carousel-item active">
-                    <div class="text-center">
-                        <h4>Plataforma Inteligente</h4>
-                        <div class="ratio ratio-16x9 my-3 mx-auto w-50">
-                            <img src="/images/emprendedora_imagen.jpeg"  
-                                 class="img-fluid rounded placeholder-img" 
-                                 alt="Placeholder 16:9">
+        <div class="container text-center">
+            <h3 class="text-3xl font-bold mb-8">Características de nuestro servicio</h3>
+
+            <!-- Carrusel -->
+            <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="text-center w-50 mx-auto"> <!-- Contenedor padre con ancho fijo -->
+                            <h4>Plataforma Inteligente</h4>
+                            <div class="ratio ratio-16x9 my-3">
+                                <img src="/images/emprendedora_imagen.jpeg"
+                                    class="img-fluid rounded placeholder-img"
+                                    alt="Placeholder 16:9">
+                            </div>
+                            <p> <!-- El párrafo hereda el ancho del padre -->
+                                Una plataforma fácil de usar que permite a los mayoristas y minoristas gestionar inventarios, ventas y pedidos desde un solo lugar.
+                            </p>
                         </div>
-                        <p>Una plataforma fácil de usar que permite a los mayoristas y minoristas gestionar inventarios, ventas y pedidos desde un solo lugar.</p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <h4>Asesoría Personalizada</h4>
+                            <div class="ratio ratio-16x9 my-3 mx-auto w-50">
+                                <img src="/images/soporte_imagen.jpeg"
+                                    class="img-fluid rounded placeholder-img"
+                                    alt="Placeholder 16:9">
+                            </div>
+                            <p>El equipo de InVentas ofrece asesoría exclusiva para cada cliente, adaptando soluciones a medida que impulsan el crecimiento de tu negocio.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <h4>Asesoría Personalizada</h4>
+                            <div class="ratio ratio-16x9 my-3 mx-auto w-50">
+                                <img src="/images/estadistica_imagen.png"
+                                    class="img-fluid rounded placeholder-img"
+                                    alt="Placeholder 16:9">
+                            </div>
+                            <p>El equipo de InVentas ofrece asesoría exclusiva para cada cliente, adaptando soluciones a medida que impulsan el crecimiento de tu negocio.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 2 -->
-                <div class="carousel-item">
-                    <div class="text-center">
-                        <h4>Asesoría Personalizada</h4>
-                        <div class="ratio ratio-16x9 my-3 mx-auto w-50">
-                            <img src="/images/soporte_imagen.jpeg"  
-                                 class="img-fluid rounded placeholder-img" 
-                                 alt="Placeholder 16:9">
-                        </div>
-                        <p>El equipo de InVentas ofrece asesoría exclusiva para cada cliente, adaptando soluciones a medida que impulsan el crecimiento de tu negocio.</p>
-                    </div>
-                </div>
-
-                 <!-- Item 3 -->
-                <div class="carousel-item">
-                    <div class="text-center">
-                        <h4>Asesoría Personalizada</h4>
-                        <div class="ratio ratio-16x9 my-3 mx-auto w-50">
-                            <img src="/images/estadistica_imagen.png"  
-                                 class="img-fluid rounded placeholder-img" 
-                                 alt="Placeholder 16:9">
-                        </div>
-                        <p>El equipo de InVentas ofrece asesoría exclusiva para cada cliente, adaptando soluciones a medida que impulsan el crecimiento de tu negocio.</p>
-                    </div>
-                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev bg-dark rounded" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev bg-dark rounded" type="button" data-bs-target="#featuresCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#featuresCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Beneficios -->
@@ -193,4 +197,5 @@
     <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
